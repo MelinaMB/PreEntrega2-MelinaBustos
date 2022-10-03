@@ -1,218 +1,173 @@
 /*...................... index............................. */
-
-
-
-/* navegador */
-nav{
+.contenedor{
     padding: 8px;
-    background-color: #ffffff2f;
-    position: fixed;
-    top: 0px;
-    width: 99%;
 
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer"
+    ;
+}
 
-    
-
-   
-    
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul{
     list-style-type: none;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: flex-end;
-    
-    
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li{
-    display: inline-block;
+    font-size: 2em;
+    margin: 8px 0;
+}
+
+.imglogo{
+    text-align: center;
+}
+
+
+
+.main{
     padding: 8px;
-    
+    background-color: brown;
+
+    grid-area: main;
 
 }
 
-nav div{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    
-
-}
-
-h1{
-    color: #e63333;
-    margin: 10px;
-    
-    
-    font-family: 'Abril Fatface', cursive ,  sans-serif; 
-
-   
-
-}
-/* main */
 .img1{
-    margin: 110px 0px 0px 0px;
-    
-    display: flex;
-    justify-content: space-evenly;
-   
-
-    
-
-
-}
-.nombre{
     display: flex;
     flex-direction: column;
-    text-align: center;
-}
-
-.img2{
-    margin: 30px 10px 10px 10px;
-    display: flex;
-    justify-content: space-evenly;
-    
-    
-
-    
-}
-/* footer */
-.footer{
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
-    
-    
-    
-    
-    
-    
-}
-.redes{
-    
-    display: flex;
-    flex-direction: column;
-    margin-right: 15px;
-    
-    
-}
-li{
-    list-style-type: none;
-}
-
-.logo{
-    
-    display: flex;
     align-items: center;
-   
-   
-    
-}
-
-.columna{
-    margin-left: 50px;
-}
-
-a{
-    text-decoration: none;
-}
-
-
-/* ···················pagina contacto···················· */
-
-/* ·····main····· */
-
-
-/* formulario */
-.iframe{
-    margin: 150px 0px 0px 0px;
-}
-
-.formularioemp{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-.formelem{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-
-.botonenviar{
-    margin-left: 200px;
-    margin-bottom: 30px;
-
-}
-
-/*···················· pagina micuenta······················· */
-
-/* main */
-.micuenta{
-    background-image: url(/img/micuenta.webp);
-    
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat ;
     text-align: center;
-    line-height: 3;
-    font-family: 'Abril Fatface', cursive ,  sans-serif; 
-    font-size: 100px;
-    
-}
-
-.accederregistro{
-    display: flex;
-    flex-direction: row;
-    
+    font-size: 2em;
 
 }
-.acceder{
-    width: 50%;
-}
-.registro{
-    width: 50%;
-}
-
-/* ················pagina empresa················ */
-.mainempresa{
-    margin: 110px;
-}
-.logomainempresa{
-    display: flex;
-    color: #e63333;
-}
-
-/* ··········pagina productos············· */
-.mainproductos{
-    margin: 150px 0px 0px 200px ;
-    
-    
-}
-
-.listaproductos{
-    position: fixed;
-    left: 2%;
-    
-
-    
-    
-}
-.productos{
+.img2{
     display: flex;
     flex-direction: column;
-    margin: 150px 0px 0px 0px;
-   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.footer{
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* como se va a ver en el escritorio */
+@media screen and (min-width: 768px) {
+    /* nav */
+    nav{
+        padding: 8px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
+
+    nav ul{
+        
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: flex-end;
+
+    }
+
+    nav ul li{
+        list-style-type: none;
+        font-size: 1em;
+        padding: 8px;
+
+        display: inline-block;
+    }
+
+    .imglogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+
+    h1{
+        color: #e63333;
+        margin: 10px;
+    
+    
+        font-family: 'Abril Fatface', cursive ,  sans-serif; 
+    }
+
+    /* main */
+
+    .img1{
+        margin: 110px 0px 0px 0px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 1em;
+        
+    }
+
+    .img2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* footer */
+    .footer{
+        grid-area: footer;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 1em;
+        
+    }
+
+    .redes{
+    
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px; 
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+
+
+
+
 
 }
 
