@@ -156,7 +156,6 @@
     /* main */
     .micuenta{
         background-image: url(/img/micuenta.jpg);
-    
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat ;
@@ -164,7 +163,16 @@
         line-height: 3;
         font-family: 'Abril Fatface', cursive ,  sans-serif; 
         font-size: 100px;
+        
     
+    }
+    h4 {
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
     }
 
     .accederregistro{
@@ -250,9 +258,9 @@
         flex-direction: row;
         text-align: center;
         justify-content: space-evenly;
-        font-size: 1em;
-        
+        font-size: 1em;   
     }
+   
 
     .img2{
         display: flex;
@@ -379,6 +387,14 @@
     font-family: 'Abril Fatface', cursive ,  sans-serif; 
     font-size: 100px;
     
+}
+h4 {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .accederregistro{
