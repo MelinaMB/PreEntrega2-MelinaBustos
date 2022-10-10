@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link a css -->
+    <!-- links estilos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- link css -->
     <link rel="stylesheet" href="../main.css">
 
     <!-- fuentes -->
@@ -16,56 +19,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     <!-- nombre de la pestaña -->
-
     <title>Empresa</title>
-
-
 </head>
-<body>
 
-    <!-- menu -->
-
+<body class="contenedor">
+    <!-- navegador -->
     <header>
-
-        <nav>
+        <nav class="navbar   navbar-expand-lg bg-light">
             <div class="imglogo">
                 <!-- logo de pagina -->
-              <img src="../img/logo.jpg" alt="logonav">
-    
+                <img src="../img/logo.jpg" alt="logonav">
+
                 <h1>Kioshi Deco</h1>
-    
+
             </div>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="empresa.html">Empresa</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="micuenta.html">Mi Cuenta</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <hr>
-    
+
+            <!-- menu de la pagina -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="micuenta.html">Mi Cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <!-- cuerpo de la pagina -->
-
-
+    <!-- main de la pagina de empresa -->
 
     <main class="mainempresa">
 
         <div class="logomainempresa">
             <!-- logo del main -->
-          <img src="../img/logo.jpg" alt="logonav" >
+            <img src="../img/logo.jpg" alt="logonav">
 
             <h4>Kioshi Deco</h4>
 
@@ -74,60 +81,75 @@
         <div class="empresadescripcion">
             <h5>Industria Argentina</h5>
         </div>
-        <div class="empresadescripcion">
-            <p>Somos fabricantes de muebles de madera con más de 60 años en el sector y una fabrica de 5.000 m2 en la ciudad de Quilmes, Buenos Aires.</p>
-            <br>
-            <p>Nuestra trayectoria nos ha brindado experiencia en la elaboración de buenos productos y una gran relación de confianza con nuestros clientes, estableciendo una cadena comercial que se extiende por todo el país. </p>
-            <br>
-            <p>Creamos muebles para diferentes espacios del hogar, con una notable fusión entre el detalle artesanal sobre la madera maciza y la precisión tecnológica en la manufactura, que garantizan un producto final con la mejor terminación.</p>
-            <br>
-            <p>Seguimos manteniendo los valores del fundador de nuestra empresa, Roberto Genoud, en las nuevas generaciones de la familia. Una extraordinaria convergencia de diseño e industria, con su característico criterio de calidad.</p>
-        </div>
+        <section class="container empresadescripcion">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <p>Somos fabricantes de muebles de madera con más de 60 años en el sector y una fabrica de 5.000 m2
+                        en la ciudad de Quilmes, Buenos Aires.</p>
+                    <br>
+                    <p>Nuestra trayectoria nos ha brindado experiencia en la elaboración de buenos productos y una gran
+                        relación de confianza con nuestros clientes, estableciendo una cadena comercial que se extiende
+                        por todo el país. </p>
+                </div>
+                <br>
+                <div class="col-sm-12 col-md-6">
+                    <p>Creamos muebles para diferentes espacios del hogar, con una notable fusión entre el detalle
+                        artesanal sobre la madera maciza y la precisión tecnológica en la manufactura, que garantizan un
+                        producto final con la mejor terminación.</p>
+                    <br>
+                    <p>Seguimos manteniendo los valores del fundador de nuestra empresa, Roberto Genoud, en las nuevas
+                        generaciones de la familia. Una extraordinaria convergencia de diseño e industria, con su
+                        característico criterio de calidad.</p>
+                </div>
+
+            </div>
+        </section>
+
 
         <!-- formulario trabaja con nosotros -->
 
         <div class="formularioemp">
-            <hr>
+            
             <h3> Trabaja con nosotros</h3>
-            <hr>
+            
             <form action="">
-               <div class="formelem">
-                   <label for="">Nombre completo</label>
-                   <input type="text">
-               </div>
+                <div class="formelem">
+                    <label for="">Nombre completo</label>
+                    <input class="form-control" type="text">
+                </div>
 
-               <div class="formelem">
-                   <label for="">Edad</label>
-                   <input type="text">
-               </div>
+                <div class="formelem">
+                    <label for="">Edad</label>
+                    <input class="form-control" type="text">
+                </div>
 
-               <div class="formelem">
-                   <label for="">E-mail</label>
-                   <input type="text">
-               </div>
+                <div class="formelem">
+                    <label for="">E-mail</label>
+                    <input class="form-control" type="text">
+                </div>
 
-               <div class="formelem">
-                   <label for="">Telefono</label>
-                   <input type="text">
-               </div>
+                <div class="formelem">
+                    <label for="">Telefono</label>
+                    <input class="form-control" type="text">
+                </div>
 
-               <div class="formelem">
-                   <label for="">Carga tu CV</label>
-                   <input type="file">
-               </div>
-           </form>
+                <div class="formelem">
+                    <label for="">Carga tu CV</label>
+                    <input class="btn btn-outline-dark" type="file">
+                </div>
+            </form>
 
-           <!-- boton de enviar -->
-            <div class="botonenviar"> 
-                <input type="submit"value="Enviar">
+            <!-- boton de enviar -->
+            <div class="botonenviar">
+                <input class="btn btn-outline-dark" type="submit" value="Enviar">
             </div>
 
         </div>
     </main>
-    <hr>
+    
 
     <!-- pie de pagina -->
-
+    
     <footer>
         <!-- logo del footer -->
         <section class="logofooter">
@@ -141,7 +163,7 @@
             <div>
                 <strong>LLamanos</strong>
                 <br>
-                <p>12345678/12345678</p>
+                <p>12345678 / 12345678</p>
             </div>
             <div>
                 <strong>Escribinos</strong>
@@ -149,7 +171,7 @@
                 <p>kioshideco@gmail.com</p>
             </div>
             <div>
-                <strong>Vusitanos</strong>
+                <strong>Visitanos</strong>
                 <p>Quilmes, Buenos Aires, Argentina</p>
             </div>
         </section>
@@ -158,24 +180,30 @@
             <div class="titulo">
                 <strong>Seguinos</strong>
             </div>
-            <div > 
+            <div>
                 <ul class="redes">
                     <li class="redes">
-                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/logo instagram.jpg" alt="logoinstagram"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/logo instagram.jpg"
+                                alt="logoinstagram"></a>
                     </li>
                     <li class="redes">
-                        <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/logo facebook.jpg" alt="logofacebook"></a> 
+                        <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/logo facebook.jpg"
+                                alt="logofacebook"></a>
                     </li>
                     <li class="redes">
-                        <a href="https://www.youtube.com/" target="_blank"><img src="../img/logo youtube.jpg" alt="logoyoutube"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="../img/logo youtube.jpg"
+                                alt="logoyoutube"></a>
                     </li>
                 </ul>
             </div>
         </section>
     </footer>
 
+    <!-- link de javascript -->
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

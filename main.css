@@ -1,393 +1,129 @@
 /*...................... index............................. */
 /* vista mobile*/
-
-@media screen and (min-width: 0px) and (max-width: 767px) {
-
-    .contenedor{
-        padding: 8px;
-    
-        display: grid;
-        grid-template-areas: 
-        "nav"
-        "main"
-        "footer"
-        ;
-    
-    }
-    
-    a{
-        text-decoration: none;
-        
-    }
-    li{
-        list-style-type: none;
-    
-    }
-    .nav{
-        grid-area: nav;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    nav ul{
-        
-        padding: 0;
-        text-align: center;
-    }
-    
-    nav ul li{
-        font-size: 2em;
-        margin: 8px 0;
-    }
-    
-    .imglogo{
-        text-align: center;
-    }
-    
-    
-    
-    .main{
-        padding: 8px;
-        background-color: brown;
-    
-        grid-area: main;
-       
-    
-    }
-    
-    .img1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2em;
-    
-    }
-    .img2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2em;
-    }
-    
-    footer{
-        grid-area: footer;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2em;
-    
-    }
-    
-    
-    /* ···················pagina contacto···················· */
-    
-    /* ·····main····· */
-    
-    .formularioemp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2em;
-        
-    }
-    
-    /* ················pagina empresa················ */
-    /* main */
-    .logomainempresa{
-        display: flex;
-        color: #e63333;
-        font-size: 1em;
-    }
-    .empresadescripcion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2em;
-    
-    }
-    
-    /* ··········pagina productos············· */
-    
-    .listaproductos{
-        display: flex;
-        position: fixed;
-        left: 2%;
-        font-size: 1.5em;
-        flex-direction: column;
-        top: 20%;
-       
-    
-        
-    
-        
-        
-    }
-    .productos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2em;
-        
-    
-    }
-    .imgproducto{
-        display: flex;
-        flex-direction: column;
-    
-    }
-
-    /*···················· pagina micuenta······················· */
-
-    /* main */
-    .micuenta{
-        background-image: url(img/micuenta.jpg);
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat ;
-        text-align: center;
-        line-height: 3;
-        font-family: 'Abril Fatface', cursive ,  sans-serif; 
-        font-size: 100px;
-        
-    
-    }
-    h4 {
-        display: block;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-    }
-
-    .accederregistro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-        font-size: 2em;
-    
-
-    }
-    .acceder{
-        width: 50%;
-    
-    }
-
-
-    .registro{
-        width: 50%;
-    }
-
-
-
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
 
+.contenedor {
+    padding: 8px;
+}
 
+a {
+    text-decoration: none;
+}
 
+li {
+    list-style-type: none;
+}
 
-/* como se va a ver en el escritorio */
-@media screen and (min-width: 768px) {
-    /* nav */
-    nav{
-        padding: 8px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-        
-    }
+.imglogo {
+    justify-content: center;
+    text-align: center;
+}
 
-    nav ul{
-        
-        margin: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: flex-end;
+.main {
+    padding: 8px;
+    grid-area: main;
+}
 
-    }
+.img1, .img2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
 
-    nav ul li{
-        list-style-type: none;
-        font-size: 1em;
-        padding: 8px;
+.img1 img, .img2 img {
+    width: 100%;
+}
 
-        display: inline-block;
-    }
+.img1 h3, .img2 h3 {
+    color: black;
+}
 
-    .imglogo{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-    }
+footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
 
+.redes {
+    padding: 0;
+}
 
-    h1{
-        color: #e63333;
-        margin: 10px;
-    
-    
-        font-family: 'Abril Fatface', cursive ,  sans-serif; 
-    }
+/* ···················pagina contacto···················· */
 
-    /* main */
+/* ·····main····· */
 
-    .img1{
-        margin: 110px 0px 0px 0px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: space-evenly;
-        font-size: 1em;   
-    }
-   
+.formularioemp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
 
-    .img2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
-        font-size: 1em;
-    }
-
-    /* footer */
-    footer{
-        grid-area: footer;
-        display: grid;
-        grid-template-areas: 
-        "logofooter contacto"
-        "logofooter redessociales"
-        
-
-        ;
-
-        
-    }
-    .logofooter{
-        grid-area: logofooter;
-        
-    }
-    .contacto{
-        grid-area: contacto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    .redessociales{
-        grid-area: redessociales;
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        
-    }
-    
-    .redes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 10px;
-        
-    }
-    
-        
-        
-
-    li{
-        list-style-type: none;
-    }
-    
-
-    
-
-   
-
-    /* ···················pagina contacto···················· */
-
-    /* ·····main····· */
-    .formularioemp{
-        
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 1.5em;
-        
-    }
-
-    /* ················pagina empresa················ */
+/* ················pagina empresa················ */
 /* main */
-.logomainempresa{
+.logomainempresa {
     display: flex;
     color: #e63333;
-    font-size: 1.5em;
+    font-size: 1em;
 }
-.empresadescripcion{
-    font-size: 1.5em;
 
+.empresadescripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
 }
 
 /* ··········pagina productos············· */
 
-
-.listaproductos{
+.listaproductos {
+    display: flex;
     position: fixed;
-    left: 2%;  
-
-}
-.productos{
+    left: 2%;
+    font-size: 1em;
     flex-direction: row;
-    align-items: right;
-    justify-content: right;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 2em;
-    
-    
-
-  
 }
 
-.imgproducto{
-    flex-direction: row;
-
+.imgproducto {
+    display: flex;
+    flex-direction: column;
 }
 
-    /*···················· pagina micuenta······················· */
-
+/*···················· pagina micuenta······················· */
 /* main */
-.micuenta{
-    background-image: url(/img/micuenta.jpg);
-    
+.micuenta {
+    background-image: url(img/micuenta.jpg);
     background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     text-align: center;
     line-height: 3;
-    font-family: 'Abril Fatface', cursive ,  sans-serif; 
+    font-family: 'Abril Fatface', cursive, sans-serif;
     font-size: 100px;
-    
 }
+
 h4 {
     display: block;
     margin-block-start: 0px;
@@ -397,30 +133,168 @@ h4 {
     font-weight: bold;
 }
 
-.accederregistro{
+.accederregistro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0;
-    font-size: 1em;
-    
-
-}
-.acceder{
-    width: 50%;
-    
+    font-size: 2em;
 }
 
-
-.registro{
+.acceder {
     width: 50%;
 }
 
-   
-   
+.registro {
+    width: 50%;
+}
 
+/* como se va a ver en el escritorio */
+@media screen and (min-width: 768px) {
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer"
+        ;
+    }
+    
+    .imglogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    h1 {
+        color: #e63333;
+        margin: 10px;
+        font-family: 'Abril Fatface', cursive, sans-serif;
+    }
+
+    /* main */
+    .img1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1em;
+    }
+    .img2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1em;
+    }
+
+    /* footer */
+    footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-areas:
+            "logofooter contacto"
+            "logofooter redessociales"
+            
+        ;
+        font-size: 1.5em;
+        margin: 10px 0 0 0;
+    }
+
+    .logofooter {
+        grid-area: logofooter;
+    }
+
+    .contacto {
+        grid-area: contacto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .redessociales {
+        grid-area: redessociales;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px;
+    }
+    li {
+        list-style-type: none;
+    }
+    /* ···················pagina contacto···················· */
+    /* ·····main····· */
+    .formularioemp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2em;
+    }
+    /* ················pagina empresa················ */
+    /* main */
+    .logomainempresa {
+        display: flex;
+        color: #e63333;
+        font-size: 1.5em;
+    }
+
+    .empresadescripcion {
+        font-size: 1.5em;
+    }
+
+    /* ··········pagina productos············· */
+    .productos {
+        flex-direction: row;
+        text-align: center;
+        font-size: 2em;
+    }
+    .imgproducto {
+        flex-direction: row;
+    }
+    /*···················· pagina micuenta······················· */
+
+    /* main */
+    .micuenta {
+        background-image: url(/img/micuenta.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        line-height: 3;
+        font-family: 'Abril Fatface', cursive, sans-serif;
+        font-size: 100px;
+    }
+    h4 {
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    .accederregistro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0;
+        font-size: 1em;
+    }
+    .acceder {
+        width: 45%;
+    }
+    .registro {
+        width: 45%;
+    }
 }
 
 
